@@ -1,7 +1,12 @@
 new Clipboard(".clBoard"), function () {
-    var a = "wrtpsdfghjklzcvbnm".split(""), b = "eyuioa".split(""), c = [], d = document.getElementById("buttoon");
+    var a = "wrtpsdfghjklzcvbnm".split(""),
+        b = "eyuioa".split(""),
+        c = [],
+        d = document.getElementById("buttoon");
+
     d.addEventListener("click", function () {
-        for (var e = Math.floor(3 * Math.random() + 4), f = 0; f <= e - 1; f++)if (f % 2 == 0) {
+        for (var e = Math.floor(3 * Math.random() + 4),
+                 f = 0; f <= e - 1; f++)if (f % 2 == 0) {
             c[f] = a[Math.floor(17 * Math.random())];
             for (var g = 0; g < e; g++)g % 2 != 0 && (c[g] = b[Math.floor(6 * Math.random())])
         }
